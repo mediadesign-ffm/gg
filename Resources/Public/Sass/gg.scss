@@ -1,0 +1,274 @@
+
+.page .stripe                                          {transition: all ease .3s; position: relative; width: 100%; height: 120px;display: block; overflow: hidden; }                                                  
+.page .stripe img                                      {position: absolute; right: 20%; bottom: 0%; width: auto; height: 120px; }
+.page .toparea                                         {background: #f2f2f2; } 
+
+.page.red h2                                           {color: $red;}
+.page.red .stripe                                      {background-color: $red; background: linear-gradient(90deg, rgba($red,0.033) 0%, rgba($red,0.40) 25%, rgba($red,1) 50%, rgba($red,1) 100%);}
+
+.page.violett h2                                       {color: $violett;}
+.page.violett .stripe                                  {background-color: $violett; background: linear-gradient(90deg, rgba($violett,0.033) 0%, rgba($violett,0.40) 25%, rgba($violett,1) 50%, rgba($violett,1) 100%);}
+
+.page.green h2                                         {color: $green;}
+.page.green .stripe                                    {background-color: $green; background: linear-gradient(90deg, rgba($green,0.033) 0%, rgba($green,0.40) 25%, rgba($green,1) 50%, rgba($green,1) 100%);}
+
+.page.grey h2                                          {color: $grey;}
+.page.grey .stripe                                     {background-color: $grey; background: linear-gradient(90deg, rgba($grey,0.033) 0%, rgba($grey,0.40) 25%, rgba($grey,1) 50%, rgba($grey,1) 100%);}
+
+.page.orange h2                                        {color: $orange;}
+.page.orange .stripe                                   {background-color: $orange; background: linear-gradient(90deg, rgba($orange,0.033) 0%, rgba($orange,0.40) 25%, rgba($orange,1) 50%, rgba($orange,1) 100%);}
+                                                                     
+.page.blue h2                                          {color: $blue;}
+.page.blue .stripe                                     {background-color: $blue; background: linear-gradient(90deg, rgba($blue,0.033) 0%, rgba($blue,0.40) 25%, rgba($blue,1) 50%, rgba($blue,1) 100%);}
+
+
+.page.darkgrey h2                                      {color: darken($grey,10%);}
+.page.darkgrey .stripe                                 {background-color: darken($grey,10%); background: linear-gradient(90deg, rgba(darken($grey,10%),0.033) 0%, rgba(darken($grey,10%),0.40) 25%, rgba(darken($grey,10%)y,1) 50%, rgba(darken($grey,10%),1) 100%);}
+
+
+.page .btn-primary   a                                  {color: #fff;}
+.page .btn-secondary a                                  {color: #fff;}
+
+header{
+    .tx-indexedsearch-searchbox                         {width: 75%;}
+
+    .top{    
+	    a.readermode:before                             {content:'\f028';}  
+        img.einfachmode                                 {/*background-image: url('../../../../typo3conf/ext/gg/Resources/Public/Design/leichtesprache.svg'); background-repeat: no-repeat; background-position: center center; */ width: $symbolfontsize !important; height: $symbolfontsize !important; }  
+                  
+    } 
+
+}
+
+main {
+    .content *.focus                                     {text-decoration: underline;}
+     .right > *                                          {padding: 1rem; background: #f2f2f2; margin-bottom: 1rem; }
+     .right h2,
+     .right h3                                           {color: $baseColor;}    
+    
+    .personlist                                           {margin-bottom: 1rem;}
+    .personlist p                                         {padding-left: 1.5rem; }
+    .personlist p::before                                 {}
+    .personlist p                                         {margin-bottom: .25rem; }  
+     
+    .personlist .personSymbol                             {margin-bottom: 0; }
+    .personlist strong                                    {font-weight: 600; }
+    .personlist .personSymbol::before                     {content: '\F007'; font-family: 'FontAwesome'; text-indent: 0;font-size: 90%;
+                                                           margin-left: -1.5rem; color: #aaa; padding: 0; width: 1.5rem; display: inline-block;}
+    
+    a.link-fax::before, 
+    a.link-phone::before,
+    a.link-mail::before                                   {margin-left: -1.5rem; color: #aaa; padding: 0; width: 1.5rem;}
+      
+    /* design********************************************/
+    
+    .frame-colored                                        {background-color: $blue; color: #fff;}
+    .frame-colored h2                                     {margin-bottom: 2rem; color: #fff;}
+    .frame-colored h3                                     {color: #fff;}
+    
+
+    .frame-grey                                           {background: #d9dee2;}
+    .frame-grey > .container > h2                         {color: #002647; font-size: 2rem; font-weight: 500;     padding-right: calc(var(--bs-gutter-x) / 2);    padding-left: calc(var(--bs-gutter-x) / 2);}
+    .frame-grey > .container > h3,
+    .frame-grey > .container > h4                         {display: none;}    
+    
+    
+    .frame-grey .frame-teaserimage                         {background: #fff; height: 100%;}  
+    
+    .frame-grey .ce-gallery                                {border-radius: 0 0 4rem 0;}      
+    .frame-grey .newsimage  picture                        {border-radius: 0 0 4rem 0;}       
+    
+    .frame-grey .article  .nomore                          {border-top: 0; }      
+    .frame-grey .article  .nomore a                        {color: #fff;   background-color: #002647;    border-color: #002647; padding: 0.375rem 0.75rem;   font-size: 1rem;   border-radius: 0.25rem;}      
+
+    .frame-grey .frame-teaserimage h2,
+    .frame-grey .frame-teaserimage h4                      {display: none;}
+    .frame-grey .frame-teaserimage h3                      {padding: var(--bs-gutter-x) calc(var(--bs-gutter-x) / 2) 0; font-weight: 500;  }
+    .frame-grey .frame-teaserimage .ce-bodytext            {padding: 0 calc(var(--bs-gutter-x) / 2) var(--bs-gutter-x);}      
+    .frame-grey .frame-teaserimage .ce-bodytext .btn-secondary {color: #fff;  background-color: #002647;  border-color: #002647;}
+    
+    .frame-white > .container > h2                         {color: #002647; font-size: 2rem; font-weight: 500;     padding-right: calc(var(--bs-gutter-x) / 2);    padding-left: calc(var(--bs-gutter-x) / 2);}
+    .frame-white > .container > h3,
+    .frame-white > .container > h4                         {display: none;}
+    
+    
+    .frame-white ul                                        {list-style-type: none; margin: 0; padding: 0;}
+    .frame-white ul li                                     {margin: 0; padding: 0;}    
+    .frame-white ul li a                                   {padding: .5rem calc(var(--bs-gutter-x) / 2); display: block;}    
+    .frame-white ul li:nth-of-type(odd)    a               {background: #d9dee2;}        
+    
+    
+    .frame-white .row h2,
+    .frame-white .row h4                                   {display: none;}
+    .frame-white .row h3                                   {padding: 0 calc(var(--bs-gutter-x) / 2) 0; font-weight: 500;  }
+    
+    .mobility h3:before                                    {content:'\F207'; font-family: $symbol; font-size: 2rem; padding-right: 1rem; color: #A82A19;}                                              
+    .health h3:before                                      {content:'\F21E'; font-family: $symbol; font-size: 2rem; padding-right: 1rem; color: #A82A19;}                                              
+    .social h3:before                                      {content:'\F0c0'; font-family: $symbol; font-size: 2rem; padding-right: 1rem; color: #A82A19;}                                              
+
+    .posrel                                                {position: relative;}
+    
+    .frame-quix                                            {background: $blue; position: absolute; left: 0; bottom: 0; z-index: 12; padding: 3rem;  color: #fff; }
+    .frame-quix ul                                         {list-style-type: none; margin: 0; padding: 0;}
+    .frame-quix ul li                                     {margin: 0; padding: 0;}    
+    .frame-quix ul li a                                   {padding: calc(var(--bs-gutter-x) / 2); display: block; color: #fff; font-size: 1.5rem;}    
+    .frame-quix ul li:nth-of-type(odd)    a               {background:darken($blue,10%)}  
+
+}
+
+
+
+
+/* News***************************************************/
+
+.news .t3up_slider{
+    .carousel-indicators li                                 {width: 13px; height: 13px; display: block; border: 1px solid rgba(255, 255, 255, 1); background: rgba(255, 255, 255, 0.75); cursor: pointer; text-indent: 9999px; border-radius: 20px;}
+    .carousel-indicators li:hover,
+    .carousel-indicators li.active                          {background: rgba(255, 255, 255, 1);}
+    
+    .carousel-caption h3                                    {font-size: 250%; font-weight: 600;}
+    .carousel-caption p                                     {font-size: 175%;}
+    &.sliderstyle-5 p                                       {font-size: 250%; font-weight: 600;}
+}
+
+.t3upSlideshow {                                            max-height: 35rem; overflow: hidden;
+    .carousel-caption                                      {background: none; bottom: auto; top: 25%;}
+    .container                                             {background: none;}
+    .container h3                                          {font-size: 3rem; padding: 2rem; max-width: 50%; font-weight: 500; background: rgba(255,255,255,.75); border-radius: 0 0 4rem 0;} 
+  
+    
+     picture img                                           {object-fit: cover;}
+    
+}
+
+/* FOOTER ************************************************/
+footer {                                                    background-image: url(../../../typo3conf/ext/gg/Resources/Public/Design/kreisGGN.png);  background-repeat: no-repeat; background-size: 460px auto, cover; background-position: 66% center;      
+    *.focus                                                 {text-decoration: underline;}                                      
+    .frame-type-menu_pages li                               {}
+    .frame-type-menu_pages li a::before                     {padding-right: 1rem; content:'\F105' ; font-size: 150%; font-weight: 400; display: none; } 
+    .frame-type-menu_pages li a                             {transition: all ease .3s; margin-bottom: 0rem; padding: .25rem 0rem; display: inline-block; display: flex; align-items: center; color: rgba(255, 255, 255, 0.8); }
+    .frame-type-menu_pages li a:hover                       {color: rgba(255, 255, 255, 1); }
+    
+    .footer1                                                {background-color: rgba(0,0,0,.75) }                                
+
+    
+    h3                                                      {font-weight: 400; font-size: 2rem; color: rgba(255, 255, 255, .9);}
+    
+    
+    .iconall                                                {padding: 1rem 0; background: rgba(40, 40, 40,.5);}
+    .iconall  > *                                           {max-width: 1000px;}
+    ul.icons    span                                        {display: none;}              
+                            
+}
+
+.dpl .toggle                                                {column-count: 2;}
+
+
+
+@media (min-width: 576px) {
+    footer .orte ul                                        {column-count: 2;}  
+}
+
+@media screen and (min-width: 992px) {
+    
+    .overlay                                   {background-color: rgba(0,0,0, 0.0); min-height: 500vH} 
+    .overlay.mmobil                            {background-color: rgba(0,0,0, 0.5); min-height: 500vH; display: block;}    
+    .overlay.turquoise                         {background-color: rgba($turquoise, 0.25);}     
+    .overlay.blue                              {background-color: rgba($blue, 0.25);}     
+    .overlay.red                               {background-color: rgba($red, 0.25);}     
+    .overlay.green                             {background-color: rgba($green, 0.25);}  
+    .overlay.grey                              {background-color: rgba($grey, 0.25);}   
+    .overlay.darkgrey                              {background-color: rgba($grey, 0.25);}   
+    .overlay.violett                              {background-color: rgba($violett, 0.25);}   
+    .overlay.orange                              {background-color: rgba($orange, 0.25);}     
+    
+
+	.tx_solr.container {padding: 0;}
+	.toparea                                               {transition: all ease .3s;}    
+	.searchform                                   		   {transition: all ease .3s;}	
+	
+	.sticky .searchform                                    {display: none;}
+	.sticky .logo                                          {padding-top: 0.25rem; padding-bottom: 0.25rem;}
+	.sticky .toparea                                       {display: none;}  
+	
+     main{                                                 z-index: 1; position: relative;
+        .content                                           {/* padding-bottom: 3rem; min-height: 75vH */}
+
+        .frame-grey > .container > h2                      {font-size: 3rem; margin-bottom: 2rem;}
+        .frame-white > .container > h2                      {font-size: 3rem; margin-bottom: 2rem;}
+    }
+
+
+    /* Navigation ****************************************/
+    .blockNav nav#menu {
+        > ul                                               {position: inherit;}
+        > ul > li                                          {padding-right: 1rem;}   
+        .nav li.activated                                  {background-color: #f2f2f2;} 
+        
+        > ul > li > a                                      {font-size: 1.333rem; text-transform: none; border-bottom: 4px solid transparent; padding-bottom: 1.5rem; padding-left: 1rem; padding-right: 1rem; font-weight: 600;}
+        > ul > li > ul > li > a                            {font-weight: 600;}        
+        
+        .nav > li                                          {padding: 0;}
+        
+        .nav ul ul li:hover                                {background-color: #f2f2f2;}
+            
+        > ul > .navitem.red > a:hover                      {background: #f2f2f2; border-bottom: 4px solid #C39094}
+        > ul > .navitem.act.red > a,
+        > ul > .navitem.cur.red > a                        {border-bottom: 4px solid #C39094}
+        
+        > ul > .navitem.green > a:hover                    {background: #f2f2f2; border-bottom: 4px solid #8DB998}
+        > ul > .navitem.act.green > a,
+        > ul > .navitem.cur.green > a                      {border-bottom: 4px solid #8DB998}
+          
+        > ul > .navitem.grey > a:hover                     {background: #f2f2f2; border-bottom: 4px solid #A4A6BD}
+        > ul > .navitem.act.grey > a,
+        > ul > .navitem.cur.grey > a                       {border-bottom: 4px solid #A4A6BD}
+         
+        > ul > .navitem.orange > a:hover                   {background: #f2f2f2; border-bottom: 4px solid #D5C28E}
+        > ul > .navitem.act.orange > a,
+        > ul > .navitem.cur.orange > a                     {border-bottom: 4px solid #D5C28E}
+         
+        > ul > .navitem.violett > a:hover                  {background: #f2f2f2; border-bottom: 4px solid #C89DD1}
+        > ul > .navitem.cur.violett > a,     
+        > ul > .navitem.act.violett > a                    {border-bottom: 4px solid #C89DD1}
+        
+   //     > ul > .navitem.blue,         
+   //     > ul > .navitem.act.blue                           {padding-left: 1rem; border-left: 1px solid #999 }  
+               
+        > ul > .navitem.blue > a,
+        > ul > .navitem.act.blue > a,
+        > ul > .navitem.cur.blue > a                       {border-bottom: 4px solid darken($blue,20%); color: #fff !important; background: $blue; } 
+        
+        li.subcap > div                                    {display: inline-block; font-weight: bold; padding: 0 0 10px 15px; }    
+    }   
+    
+    
+    
+}
+
+
+
+html[color-mode$=dark] {
+	.right > *                                          {background: #333;  }
+	
+    /* Navigation ****************************************/
+    .blockNav nav#menu {      
+		.nav li.activated,
+        .nav ul ul li:hover,   
+        > ul > .navitem > a:hover                          {background: transparent !important;}
+        
+        
+     }
+	main .frame-white ul li:nth-of-type(odd) a,
+	main .frame-grey .frame-teaserimage                    {background: #000 !important;}
+}
+
+
+
+
+/* .red {background-color: red !important;} */
+
+
+
+
+

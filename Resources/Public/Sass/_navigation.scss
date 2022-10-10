@@ -1,0 +1,149 @@
+.mediaNav .container  nav > ul             {display: none;}
+.standardNav .container  nav > ul          {display: none;}
+.blockNav .container  nav > ul             {display: none;}
+
+@media screen and (min-width: 992px){
+
+    li.dropmenue > span                      {cursor: pointer; display: inline-block; }
+    
+
+
+    /* Navigation 3: Navigation on the right, full size */
+    .blockNav{ 
+      
+      nav#menu  {   
+                                   
+        > ul                                {list-style: none; margin: 0; display: flex;}
+        > ul > li                           {order: 2;}       
+        > ul > li > a                       {font-size: $navigationfontsize; transition: all ease .3s; text-transform: uppercase; padding: 1.5rem 1rem; display: block; width: 100%; text-align: inherit; white-space: nowrap; border-bottom-width: .25rem; border-bottom-style: solid; border-bottom-color: transparent;} 
+        > ul > li.act > a,
+        > ul > li > a.closelink             {border-bottom-color: $navLinkHoverColor;}
+            
+        
+        
+        > ul > li > ul                      {width: 100%; list-style: none;  position: absolute; left: 0; background-color: rgba(255,255,255,.98); list-style: none; z-index: 1002; padding: 1rem; margin: 0; box-shadow: 0 .125rem .25rem .125rem rgba(0,0,0,.1);}
+        > ul > li > ul[aria-hidden=false]   {display: flex !important; opacity: 1 !important; }          
+        > ul > li > ul > li                 {width: auto; flex: 1 1 auto!important; display: inline-block; margin: 0 0 0 -0.1875rem; padding: 0; vertical-align: top; }
+        > ul > li > ul > li.drittel         {width: 33.333%;}     
+        > ul > li > ul > li.viertel         {width: 25%;}    
+        > ul > li > ul > li.fuenftel        {width: 20%;}     
+        > ul > li > ul > li.sechstel        {width: 16.666%;}            
+        > ul > li > ul > li.siebtel         {width: 14.28%;}     
+        > ul > li > ul > li.achtel          {width: 12.5%;}             
+        > ul > li > ul > li.neuntel         {width: 11.11%;}     
+        > ul > li > ul > li.zehntel         {width: 10%;}             
+       
+        > ul > li > ul li                   {position: relative;} 
+        > ul > li > ul li a                 {margin-left: 1rem; display: block; color: $subnavLinkColor; }
+        > ul > li > ul > li > a             {font-weight: $boldweight; letter-spacing: .01em; padding-bottom: 1rem; }  
+        > ul > li > ul li a:hover           {color: $baseColor}    
+        
+        > ul > li > ul li a:before          {position: absolute; top: 0; left: 0; content:'\F0DA'; font-family: $symbol; width: 0.75rem; text-align: center; display: inline-block; opacity: 0; height: 100%;}
+        > ul > li > ul li:hover > a:before  {opacity: 1;}  
+
+        > ul > li > ul > li > ul            {list-style: none;}  
+        > ul > li > ul > li > ul > li       {line-height: 150%;}  
+        > ul > li > ul > li > ul > li a     {padding: 0 0 0.625rem 0;}                               
+      }  
+    }
+    
+    
+    /* Navigation ****************************************/
+    .blockNav nav#menu {
+        > ul                                               {position: inherit;}
+        > ul > li                                          {padding-right: 1rem;}   
+        .nav li.activated                                  {background-color: #f2f2f2;} 
+        
+        > ul > li > a                                      {font-size: 1.333rem; text-transform: none; border-bottom: 4px solid transparent; }
+        > ul > li > ul > li > a                            {font-weight: 600;}        
+        .nav > li                                          {padding: 0;}
+        .nav > li > a                                      {font-weight: 600;}
+        
+        .nav ul ul li:hover                                {background-color: #f2f2f2;}
+            
+        > ul > .navitem.red > a:hover                      {background: #f2f2f2; border-bottom: 4px solid #C39094}
+        > ul > .navitem.act.red > a,
+        > ul > .navitem.cur.red > a                        {border-bottom: 4px solid #C39094}
+        
+        > ul > .navitem.green > a:hover                    {background: #f2f2f2; border-bottom: 4px solid #8DB998}
+        > ul > .navitem.act.green > a,
+        > ul > .navitem.cur.green > a                      {border-bottom: 4px solid #8DB998}
+          
+        > ul > .navitem.grey > a:hover                     {background: #f2f2f2; border-bottom: 4px solid #A4A6BD}
+        > ul > .navitem.act.grey > a,
+        > ul > .navitem.cur.grey > a                       {border-bottom: 4px solid #A4A6BD}
+         
+        > ul > .navitem.orange > a:hover                   {background: #f2f2f2; border-bottom: 4px solid #D5C28E}
+        > ul > .navitem.act.orange > a,
+        > ul > .navitem.cur.orange > a                     {border-bottom: 4px solid #D5C28E}
+         
+        > ul > .navitem.violett > a:hover                  {background: #f2f2f2; border-bottom: 4px solid #C89DD1}
+        > ul > .navitem.cur.violett > a,     
+        > ul > .navitem.act.violett > a                    {border-bottom: 4px solid #C89DD1}
+        
+        > ul > .navitem.blue,         
+        > ul > .navitem.act.blue                           {padding-left: 1rem; border-left: 1px solid #999 }  
+               
+        > ul > .navitem.blue > a:hover,
+        > ul > .navitem.act.blue > a,
+        > ul > .navitem.cur.blue > a                       {border-bottom: 4px solid #346097; } 
+        
+        li.subcap > div                                    {display: inline-block; font-weight: bold; padding: 0 0 10px 15px; }    
+
+    }
+    
+    
+}
+
+
+
+
+
+/* ** COLORS **********************************************************************************************************************************************************/
+nav {
+    li.orange a                                            {color: $orange !important}
+    li.orange.activated > a,    
+    li.orange > a:hover                                    {border-bottom-color: $orange !important}
+
+    li.blue a                                              {color: $blue !important}
+    li.blue.activated > a,    
+    li.blue > a:hover                                      {border-bottom-color: $blue !important}  
+
+    li.green a                                             {color: $green !important}
+    li.green.activated > a,    
+    li.green > a:hover                                     {border-bottom-color: $green !important}  
+    
+    li.grey a                                              {color: darken($grey,10%) !important}
+    li.grey.activated > a,    
+    li.grey > a:hover                                      {border-bottom-color: $grey !important}  
+    
+    li.red a                                               {color: $red !important}
+    li.red.activated > a,    
+    li.red > a:hover                                       {border-bottom-color: $red !important}  
+    
+    li.darkgrey a                                          {color: $darkgrey !important}
+    li.darkgrey.activated > a,    
+    li.darkgrey > a:hover                                  {border-bottom-color: $darkgrey !important}   
+    
+    li.darkblue a                                          {color: $darkblue !important}
+    li.darkblue.activated > a,    
+    li.darkblue > a:hover                                  {border-bottom-color: $darkblue !important}   
+    
+    li.violett a                                           {color: $violett !important}
+    li.violett.activated > a,    
+    li.violett > a:hover                                   {border-bottom-color: $violett !important}   
+    
+    li.yellow a                                            {color: $yellow !important}
+    li.yellow.activated > a,    
+    li.yellow > a:hover                                    {border-bottom-color: $yellow !important}   
+    
+    li.turquoise a                                         {color: $turquoise !important}
+    li.turquoise.activated > a,    
+    li.turquoise > a:hover                                 {border-bottom-color: $turquoise !important}   
+
+
+}
+
+
+
+

@@ -1,0 +1,28 @@
+UPDATE `tt_content` SET `layout` = '2100' WHERE `tt_content`.`layout` = '100' ;
+UPDATE `tt_content` SET `layout` = '2095' WHERE `tt_content`.`layout` = '95' ;
+UPDATE `tt_content` SET `layout` = '2090' WHERE `tt_content`.`layout` = '90' ;
+UPDATE `tt_content` SET `layout` = '2085' WHERE `tt_content`.`layout` = '85' ;
+UPDATE `tt_content` SET `layout` = '2080' WHERE `tt_content`.`layout` = '80' ;
+UPDATE `tt_content` SET `layout` = '2075' WHERE `tt_content`.`layout` = '75' ;
+UPDATE `tt_content` SET `layout` = '2070' WHERE `tt_content`.`layout` = '70' ;
+UPDATE `tt_content` SET `layout` = '2065' WHERE `tt_content`.`layout` = '65' ;
+UPDATE `tt_content` SET `layout` = '2060' WHERE `tt_content`.`layout` = '60' ;
+UPDATE `tt_content` SET `layout` = '2055' WHERE `tt_content`.`layout` = '55' ;
+UPDATE `tt_content` SET `layout` = '2050' WHERE `tt_content`.`layout` = '50' ;
+UPDATE `tt_content` SET `layout` = '2045' WHERE `tt_content`.`layout` = '45' ;
+UPDATE `tt_content` SET `layout` = '2040' WHERE `tt_content`.`layout` = '40' ;
+UPDATE `tt_content` SET `layout` = '2035' WHERE `tt_content`.`layout` = '35' ;
+UPDATE `tt_content` SET `layout` = '2030' WHERE `tt_content`.`layout` = '30' ;
+UPDATE `tt_content` SET `layout` = '2025' WHERE `tt_content`.`layout` = '25' ;
+UPDATE `tt_content` SET `layout` = '2020' WHERE `tt_content`.`layout` = '20' ;
+UPDATE `tt_content` SET `layout` = '2015' WHERE `tt_content`.`layout` = '15' ;
+UPDATE `tt_content` SET `layout` = '2010' WHERE `tt_content`.`layout` = '10' ;
+UPDATE `tt_content` SET `layout` = '2005' WHERE `tt_content`.`layout` = '5' ;
+
+UPDATE `tt_content` SET `layout` = '0' WHERE `tt_content`.`CType` = 'table' ;
+
+UPDATE `tt_content` SET `imagecols` = '1' WHERE `tt_content`.`CType` = 'textpic' AND `tt_content`.`image` = 1;
+UPDATE `tt_content` SET `imagecols` = '2' WHERE `tt_content`.`CType` = 'textpic' AND `tt_content`.`image` = 2;
+UPDATE `tt_content` SET `imagecols` = '3' WHERE `tt_content`.`CType` = 'textpic' AND `tt_content`.`image` = 3;
+
+

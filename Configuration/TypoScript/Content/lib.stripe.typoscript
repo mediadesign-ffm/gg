@@ -1,0 +1,7 @@
+
+lib.stripe = IMAGE
+lib.stripe {
+    file                                = typo3conf/ext/gg/Resources/Public/Design/Head.svg
+    alttext                             = symbol
+    wrap = <div class="stripe d-block w-100">|</div> 
+}

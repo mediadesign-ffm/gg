@@ -1,0 +1,21 @@
+lib.header.reader = COA
+lib.header.reader.10 = TEXT
+lib.header.reader.10.value (
+    <li>
+        <a class="readermode navitem d-block" data-show-sub="false" title="reader mode">
+            <span class="ps-2 small funcItemTitle lang_de">Reader mode</span>
+        </a>     
+    )    
+ 
+lib.header.reader.20 = TEXT
+lib.header.reader.20.value (
+    <div class="tab-content">
+        <div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve tab-pane fade popover">
+            <a rel="nofollow" class="rsbtn_play" accesskey="L" title="Um den Text anzuh&ouml;ren, verwenden Sie bitte ReadSpeaker" href="https://app-eu.readspeaker.com/cgi-bin/rsent?customerid=7771&amp;lang=de_de&amp;readid=rspeaker&amp;url=">        
+            <span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Vorlesen</span></span></span>
+            <span class="rsbtn_right rsimg rsplay rspart"></span>
+            </a>
+        </div>
+    </div>    
+    )
+lib.header.reader.20.wrap = |</li>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-01-12T10:14:04Z" product-name="gg">
+		<header/>
+		<body>
+			<trans-unit id="position">
+				<source>Position</source>
+			</trans-unit>
+			<trans-unit id="room">
+				<source>Raum</source>
+			</trans-unit>
+			<trans-unit id="homephone">
+				<source>Privates Telefon</source>
+			</trans-unit>
+            <trans-unit id="department">
+                <source>Fachdienst</source>
+             </trans-unit>
+			<trans-unit id="extern">
+				<source>Externer User</source>
+			</trans-unit>
+			<trans-unit id="extern.1">
+				<source>Intern</source>
+			</trans-unit>
+			<trans-unit id="extern.2">
+				<source>Extern</source>
+			</trans-unit>
+            <trans-unit id="description">
+                <source>Fachbereich</source>
+             </trans-unit>             
+            <trans-unit id="fe_users.tab">
+                <source>GG Einstellungen</source>
+             </trans-unit>
+             
+		</body>
+	</file>
+</xliff>

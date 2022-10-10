@@ -1,0 +1,30 @@
+{
+    "name": "mediadesign-ffm/gg",
+    "type": "typo3-cms-extension",
+    "description": "Plugin for Kreis GG",
+    "authors": [
+      {
+        "name": "Michael Lang",
+        "role": "Developer",
+        "email": "info@mediadesign-ffm.de"
+      }
+    ],
+    "license": ["GPL-2.0-or-later"],
+    "keywords": [
+      "TYPO3",
+      "extension"
+    ],
+    "autoload": {
+        "psr-4": {
+            "T3ac\\Gg\\": "Classes/"
+        }
+    },
+    "require": {
+      "typo3/cms-core": "^10.4 || ^11.5"
+    },
+    "extra": {
+      "typo3/cms": {
+        "extension-key": "gg"
+      }
+    }
+  }

@@ -1,0 +1,5 @@
+lib.header.solr = COA
+lib.header.solr.10 = RECORDS
+lib.header.solr.10.tables= tt_content
+lib.header.solr.10.source = 6595
+lib.header.solr.wrap = <div class="searchform w-100 my-auto ">|</div>

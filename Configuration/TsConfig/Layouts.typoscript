@@ -1,0 +1,3 @@
+# BACKENDLAYOUTS with left navigation #
+
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:gg/Configuration/TsConfig/Layouts" extensions="typoscript">

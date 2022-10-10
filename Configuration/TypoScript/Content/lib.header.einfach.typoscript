@@ -1,0 +1,13 @@
+
+
+lib.header.einfach = IMAGE
+lib.header.einfach {
+    file                                = typo3conf/ext/gg/Resources/Public/Design/leichtesprache.svg
+    altText                             = Link: Einfache Sprachet
+    titleText                           = Einfache Sprache
+    params                              = class="einfachmode navitem d-block" data-show-sub="false" title="Einfache Sprache"
+    imageLinkWrap                       = 1
+    imageLinkWrap.enable                = 1 
+    imageLinkWrap.typolink.parameter    = {$page.header.einfachesprache}    
+    wrap                                = <li>|<span class="ps-2 small funcItemTitle lang_de">Einfache Sprache mode</span></li>
+}

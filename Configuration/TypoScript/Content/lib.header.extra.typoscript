@@ -1,0 +1,31 @@
+lib.header.extra = COA
+lib.header.extra.10 = USER
+lib.header.extra.10 {
+		userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+		vendorName = TYPO3\CMS
+		extensionName = IndexedSearch
+		pluginName = Pi2
+		switchableControllerActions {
+			Search {
+				1 = form
+				2 = search
+			}
+		}
+	    features.requireCHashArgumentForActionArguments = 0
+        view =< plugin.tx_indexedsearch.view
+        view.partialRootPaths.10 = EXT:t3up/Resources/Private/Templates/IndexedSearchTop/Partials/
+        settings =< plugin.tx_indexedsearch.settings
+
+		settings {
+			displayRules 					= 0
+			displayAdvancedSearchLink 		= 0
+			targetPid 						= {$plugin.tx_indexedsearch.settings.targetPid} 
+			headerOnly 						= 1
+		}
+}
+
+## Suche Header Suchseite
+[1481 in tree.rootLineIds]
+	lib.header.extra.10 = TEXT
+	lib.header.extra.10.wrap = <div>|</div>
+[END]

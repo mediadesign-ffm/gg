@@ -1,0 +1,2 @@
+page.files.fluidtemplates.templateRootPaths = EXT:gg/Resources/Private/Templates/Fluidtemplates/Templates/
+page.files.fluidtemplates.partialRootPaths = EXT:gg/Resources/Private/Templates/Fluidtemplates/Partials/

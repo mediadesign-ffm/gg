@@ -1,0 +1,16 @@
+###########################
+#### PAGE #################
+###########################
+
+
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:gg/Configuration/TypoScript/Content/" extensions="typoscript">
+
+page.includeCSS.navigation                  = EXT:gg/Resources/Public/Sass/_navigation.scss
+page.includeCSS.navigation                  = EXT:t3up/Resources/Public/Sass/Content/_navigation.scss
+page.includeCSS.gg                          = EXT:gg/Resources/Public/Sass/gg.scss
+
+
+
+page.includeJSFooterlibs.gg                 = EXT:gg/Resources/Public/JavaScript/gg.js
+page.includeJSFooterlibs.gg.forceOnTop      = 0
+

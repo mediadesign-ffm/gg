@@ -1,0 +1,91 @@
+TCEFORM {
+    tt_content {
+        frame_class {
+            removeItems = ruler-before, ruler-after, indent, indent-left, indent-right
+            disableNoMatchingValueElement = 1
+            types {
+                text {
+                    addItems { 
+
+                    }
+                }
+                
+                textmedia {
+                    addItems { 
+                    }
+                }
+
+                list {
+                    addItems {
+                    
+                    }
+                }    
+                
+                div {
+                    addItems { 
+
+                    }
+                } 
+                
+                header{
+                    addItems {
+  
+                    }
+                }   
+                      
+            } // types         
+        } // rame_class
+    } //tt_content
+} // TCEFORM
+
+[usergroup("2") || backend.user.isAdmin]
+    TCEFORM {
+        tt_content {
+            frame_class {
+                removeItems = ruler-before, ruler-after, indent, indent-left, indent-right
+                disableNoMatchingValueElement = 1
+                types {
+                    text {
+                        addItems { 
+    
+                        }
+                    }
+                    
+                    textmedia {
+                        addItems { 
+                            teaserimage = Teaser mit Bild
+      
+                        }
+                    }
+    
+                    list {
+                        addItems {
+                            grey = Grauer Nachrichtenslider
+                        }
+                    }    
+                    
+                    div {
+                        addItems { 
+                            
+                        }
+                    } 
+                    
+                    header{
+                        addItems {
+      
+                        }
+                    }  
+                    
+                    menu_pages{
+                        addItems {
+                           quix = Schnellzugriff
+                        }
+                    }                      
+                     
+                          
+                } // types         
+            } // frame_class
+        } //tt_content
+    } // TCEFORM
+    
+[GLOBAL]

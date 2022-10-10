@@ -1,0 +1,19 @@
+
+lib.iconwidth = TEXT
+lib.iconwidth.value = {$page.icons.width}
+    
+lib.icons = FLUIDTEMPLATE
+lib.icons {
+    file = {$page.icons.template}
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.10 {
+        folders = {$page.icons.folder}
+        folders.recursive = 1
+        sorting = title
+        sorting.direction = ascending
+        as = files
+    }
+    variables {
+        iconwidth < lib.iconwidth
+    }
+}

@@ -1,0 +1,26 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+      
+
+        <div id="language_menu" class="languagemenu d-flex mb-auto">
+            <f:for each="{menuLanguage}" as="item">
+                <f:variable name="languageTitle"><f:format.case
+                            mode="capital">{item.twoLetterIsoCode}</f:format.case></f:variable>
+                <span class="{f:if(condition: item.active, then: 'active', else: 'inactive')} {f:if(condition: item.available, else: 'text-muted')}">
+                    <f:if condition="{item.available}">
+                        <f:then>
+                            <a href="{item.link}" hreflang="{item.hreflang}" title="{item.navigationTitle}">
+                                <span>{languageTitle}</span>
+                            </a>
+                        </f:then>
+                        <f:else>
+                            <span title="{item.navigationTitle}">{languageTitle}</span>
+                        </f:else>
+                    </f:if>
+                </span>
+            </f:for>
+        </div>
+
+        
+        
+</html>
