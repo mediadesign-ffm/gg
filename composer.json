@@ -20,7 +20,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "T3ac\\Gg\\": "Classes/"
+            "Md\\Jobcenter\\": "Classes/"
         }
     },
     "require": {
